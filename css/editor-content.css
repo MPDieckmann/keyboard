@@ -1,0 +1,39 @@
+body.show-blocks p,
+body.show-blocks div,
+body.show-blocks blockquote,
+body.show-blocks figure {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 1em 0.5em 0.5em 0.5em;
+}
+
+body.show-blocks p::before,
+body.show-blocks div::before,
+body.show-blocks blockquote::before,
+body.show-blocks figure::before {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  color: #444;
+  border: 1px solid #ddd;
+  background: #eee;
+  font: 12px/1 monospace;
+  padding: 2px;
+  text-transform: uppercase;
+}
+
+body.show-blocks p::before {
+  content: "p";
+}
+
+body.show-blocks div::before {
+  content: "div";
+}
+
+body.show-blocks blockquote::before {
+  content: "blockquote";
+}
+
+body.show-blocks figure::before {
+  content: "figure";
+}

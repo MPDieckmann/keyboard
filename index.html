@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="css/editor.css" type="text/css" rel="stylesheet" />
+  <script src="js/editor.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <script>
+    document.body.appendChild(new Editor().element);
+    document.body.appendChild(new ConsoleModule(window).element);
+  </script>
+  <script src="js/script.js" data-config="{&quot;keyboardLocation&quot;:&quot;.&quot;,&quot;layouts&quot;:[&quot;DEU-DE&quot;,&quot;DEU-LATF&quot;,&quot;GRE&quot;,&quot;HBO&quot;,&quot;PHN&quot;]}" type="text/javascript"></script>
+</body>
+
+</html>
